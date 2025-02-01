@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Login</h1>
+    <h1>Sign Up</h1>
     {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}
             {% for category, message in messages %}
@@ -15,15 +15,25 @@
             {% endfor %}
         {% endif %}
     {% endwith %}
-    <form method="POST" action="/login">
+    <form method="POST" action="/signup">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
         <br>
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
         <br>
-        <button type="submit">Login</button>
+        <label for="role">Role:</label>
+        <select id="role" name="role" required>
+            <option value="student">Student</option>
+            <option value="lecturer">Lecturer</option>
+            <option value="admin">Admin</option>
+        </select>
+        <br>
+        <button type="submit">Sign Up</button>
     </form>
-    <p>Don't have an account? <a href="/signup">Sign up</a></p>
+    <p>Already have an account? <a href="/login">Login</a></p>
 </body>
 </html>
