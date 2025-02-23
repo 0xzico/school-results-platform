@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Results Platform</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
 </head>
 <body>
-    <h1>Babcock University Student Results Management System (BUSRMS)</h1>
-    <a href="/login">Login</a> | <a href="/signup">Sign Up</a>
+    <div class="info">
+        <div class="header">
+            <img src="{{url_for('static', filename='images/BabcockLogo.jpeg') }}" alt="Babcock Logo" class="Babcock">
+            <div class="burms">
+                <p id="uni">Babcock University Result Management System</p>
+                <p id="burms">BURMS</p>
+            </div>
+        </div>
+        <div class="mission">
+            <p>We want to make it easy for our lecturers <br> to record  and access students results <br> as fast and as securely and accurately as <br> possible.</p>
+        </div>
+        <div class="butt">
+            <a href="/login"><button class="home">Login</button></a>
+            <a href="/signup"><button class="home2">Signup</button></a>
+        </div>
 </body>
 </html>
