@@ -10,7 +10,6 @@ body {
     height: 100vh;
 }
 
-/* Centered Form */
 .container {
     background: white;
     padding: 30px;
@@ -44,13 +43,7 @@ label {
 
 input, select {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-top: 5px;
-    box-sizing: border-box; /* Ensures padding doesn't affect width */
-}
+
 
 /* Password Field with Show Icon */
 .password-container {
@@ -60,8 +53,7 @@ input, select {
 
 .password-container input {
     width: 100%;
-    padding-right: 40px; /* Space for eye icon */
-}
+
 
 .toggle-password {
     position: absolute;
@@ -73,7 +65,7 @@ input, select {
     color: #555;
 }
 
-/* Checkbox Container - Aligned Properly */
+
 .checkbox-container {
     display: flex;
     align-items: center;
@@ -82,25 +74,18 @@ input, select {
     margin-top: 10px;
 }
 
-.checkbox-container input {
-    width: 16px;
-    height: 16px;
-    margin-right: 8px;
-}
+
 
 /* Submit Button */
 button {
     background-color: #007bff;
     color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
+
     cursor: pointer;
     font-size: 16px;
     margin-top: 15px;
     width: 100%;
-    transition: background 0.3s ease;
-}
+
 
 button:hover {
     background-color: #0056b3;
