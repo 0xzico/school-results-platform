@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #EBEDEF;
+}
+.info{
+    background-color: #004282;
+    color: #ffff;
+    padding: 50px 50px 20px 50px;
+    margin: 150px;
+    border-radius: 10px;
+}
+.header{
+    display: flex;
+    gap: 40px;
+    text-align: center;
+    margin: 0px 130px;
+}
+.Babcock{
+    width: 60px;
+    height: 60px;
+}
+#uni{
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 22px;
+    text-wrap: nowrap;
+    font-weight: 400;
+}
+.burms{
+    text-align: center;
+    /* margin-top: -40px; */
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.mission{
+    text-align: center;
+}
+.mission p{
+    text-align: center;
+}
+.home{
+    margin: 40px 20px 40px 400px ;
+    color: #ffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border:solid 1px #ffff;
+    background: none;
+    text-align: center;
+    text-wrap: nowrap;
+    position: relative;
+    /* margin-bottom: 60px; */
+    font-size: 16px;
+    cursor: pointer;
+}
+.home2{
+    /* margin: 40px 350px; */
+    color: #ffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border:solid 1px #ffff;
+    background: none;
+    text-align: center;
+    text-wrap: nowrap;
+    position: relative;
+    /* margin-bottom: 60px; */
+    font-size: 16px;
+    cursor: pointer;
+}
